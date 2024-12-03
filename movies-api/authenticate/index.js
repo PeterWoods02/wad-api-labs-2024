@@ -24,3 +24,5 @@ const authenticate = async (request, response, next) => {
         next(new Error(`Verification Failed: ${err.message}`));
     }
 };
+
+export default authenticate;
